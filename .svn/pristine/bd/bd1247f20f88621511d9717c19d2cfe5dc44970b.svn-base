@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="@string/my_warrant"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/sp_18" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/trk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_30">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fragment_warrant_it"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+        <ImageView
+            android:id="@+id/iv_fragment_warrant_it_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/dp_70"
+            android:layout_marginRight="@dimen/dp_15"
+            android:src="@drawable/warrant_it_release" />
+    </FrameLayout>
+
+
+</LinearLayout>

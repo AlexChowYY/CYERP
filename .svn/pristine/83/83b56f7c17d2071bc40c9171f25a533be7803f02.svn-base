@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_pop_sign_success_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_160">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sign_bg" />
+
+        <TextView
+            android:id="@+id/tv_pop_sign_success_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_23"
+            android:textColor="#FDFA02"
+            android:text="+25"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="@string/sign_success"/>
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

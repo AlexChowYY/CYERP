@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_item_my_wish_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_item_my_wish_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@drawable/item_choose_gray"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_7">
+
+        <TextView
+            android:id="@+id/tv_item_my_wish_name"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1.0"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_15" />
+
+
+        <TextView
+            android:id="@+id/tv_item_my_wish_smile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/smile"
+            android:drawablePadding="@dimen/dp_4"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorGray7"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_9"
+        android:layout_marginRight="@dimen/dp_7"
+        android:layout_marginTop="@dimen/dp_8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_my_wish_time"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="@color/colorGray7"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:id="@+id/tv_item_my_wish_car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/shop_car"
+            android:drawablePadding="@dimen/dp_4"
+            android:textColor="@color/colorGray7"
+            android:textSize="@dimen/sp_12" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

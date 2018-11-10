@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_back" />
+
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1.0">
+            <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                android:id="@+id/trk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_activity_all_evaluate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_22"
+                    android:paddingTop="@dimen/dp_22">
+
+                    <View
+                        style="@style/HorizontalLine"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_marginRight="@dimen/dp_10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:text="@string/bottom"
+                        android:textColor="@color/colorFontHint"
+                        android:textSize="@dimen/sp_13" />
+
+                    <View
+                        style="@style/HorizontalLine"
+                        android:layout_width="@dimen/dp_30" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_7"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_7">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_activity_all_evaluate"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginRight="@dimen/dp_10"
+            android:scaleType="centerCrop"
+            app:riv_oval="true" />
+
+        <EditText
+            android:id="@+id/et_activity_all_evaluate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_my_experience_bg"
+            android:hint="既然来了，不说点什么吗？"
+            android:imeActionLabel="@string/send"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:textSize="@dimen/sp_14" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

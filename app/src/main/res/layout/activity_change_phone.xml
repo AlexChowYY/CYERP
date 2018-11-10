@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_46"
+        android:layout_marginLeft="@dimen/dp_43"
+        android:layout_marginRight="@dimen/dp_43">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country_region"
+            android:textColor="@color/colorFontHint"
+            android:textSize="@dimen/sp_17" />
+        <TextView
+            android:id="@+id/tv_change_phone_country"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="@string/china"
+            android:textColor="@color/colorBlack"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lines="1"
+            android:textSize="@dimen/sp_17" />
+        <TextView
+            android:id="@+id/tv_activity_change_phone_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_6"
+            android:drawableRight="@drawable/down"
+            android:text="+86"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/sp_17" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_activity_change_phone_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_43"
+        android:layout_marginRight="@dimen/dp_43"
+        android:layout_marginTop="@dimen/dp_43"
+        android:background="@null"
+        android:hint="@string/prompt_new_phone"
+        android:inputType="phone"
+        android:textColor="@color/font_gray"
+        android:textColorHint="@color/colorFontHint"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        style="@style/HorizontalLine"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_43"
+        android:layout_marginRight="@dimen/dp_43"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_activity_change_phone_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/prompt_code"
+            android:inputType="number"
+            android:textColor="@color/font_gray"
+            android:textColorHint="@color/colorFontHint"
+            android:textSize="@dimen/sp_16" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/tv_activity_change_phone_send_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_strke_coner_13"
+            android:gravity="center"
+            android:text="@string/get_code"
+            android:textColor="@color/common_big_red"
+            android:textSize="@dimen/sp_13" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLine"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/tv_activity_change_phone_achieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_40"
+        android:background="@drawable/shape_stroke_red_coener_5"
+        android:gravity="center"
+        android:text="@string/achieve"
+        android:textColor="@color/font_personal_red"
+        android:textSize="@dimen/sp_18" />
+
+
+</LinearLayout>

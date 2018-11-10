@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_item_face_library_top"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            app:riv_corner_radius_bottom_left="@dimen/dp_2_5"
+            app:riv_corner_radius_top_left="@dimen/dp_2_5" />
+
+        <TextView
+            android:id="@+id/tv_item_face_new_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/shape_circle_red_15"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_item_face_library_name"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/colorBlack"
+                android:layout_marginRight="@dimen/dp_10"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/tv_item_face_library_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:drawableLeft="@drawable/fans"
+                android:drawablePadding="@dimen/dp_8"
+                android:text="粉丝：693万"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_11" />
+
+            <TextView
+                android:id="@+id/tv_item_face_library_warrant_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/seal"
+                android:drawablePadding="@dimen/dp_8"
+                android:text="碑ta：693万"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_11" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <com.facewarrant.fw.view.SDAvatarListLayout
+                android:id="@+id/sd_item_face_library"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:image_max_count="4"
+                app:image_size="@dimen/dp_30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_back" />
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_account_and_safe_phone"
+        style="@style/settingRL"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <TextView
+            style="@style/MineTextView"
+            android:text="@string/phone_number" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_account_and_safe_pwd"
+        style="@style/settingRL"
+        android:layout_marginTop="@dimen/dp_1">
+
+        <TextView
+            style="@style/MineTextView"
+            android:text="@string/change_pwd" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/settingRL"
+        android:layout_marginTop="@dimen/dp_5"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/MineTextView"
+            android:text="@string/bind_account" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_black" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_activity_account_and_safe_login_out"
+        style="@style/settingRL"
+        android:layout_marginTop="@dimen/dp_5"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/MineTextView"
+            android:text="@string/login_out" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_black" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

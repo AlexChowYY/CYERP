@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_5"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_15"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_21"
+    android:paddingTop="@dimen/dp_10">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/riv_item_activity_answer_detail_top"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        app:riv_oval="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_answer_detail_question_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFontHint"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_item_answer_detail_question_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/colorFontHint"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_item_answer_detail_question_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:id="@+id/ll_item_answer_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

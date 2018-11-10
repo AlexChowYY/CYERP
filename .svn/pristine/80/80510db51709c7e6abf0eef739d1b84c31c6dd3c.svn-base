@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_back" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_52"
+        android:src="@drawable/phone_revise" />
+
+    <TextView
+        android:id="@+id/tv_activity_revise_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/sp_17"
+        android:layout_marginTop="@dimen/dp_30"/>
+    <TextView
+        android:id="@+id/tv_activity_revise_phone_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_40"
+        android:background="@drawable/shape_stroke_red_coener_5"
+        android:gravity="center"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/font_personal_red"
+        android:text="@string/change_phone"/>
+
+
+</LinearLayout>
