@@ -267,6 +267,7 @@ public class AddFaceActivity extends BaseActivity {
         }
         LogUtil.e(TAG, map.toString());
         RequestManager.mRetrofitManager
+                
                 .createRequest(RetrofitRequestInterface.class)
                 .joinFace(RequestManager.encryptParams(map))
                 .enqueue(new RetrofitCallBack() {
